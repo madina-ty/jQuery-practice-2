@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    overflow: hidden; 
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left-block {
+    width: 250px;
+    background-color: orange;
+    transition: width 0.3s ease; 
+  }
+  
+  .right-block {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .top-block {
+    background-color: deeppink;
+  }
+  .bottom-block {
+    background-color: aquamarine;
+  }
+  .top-block, .bottom-block {
+    flex-grow: 1;
+    min-height: 100px; 
+  }
+  
+  .arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 250px;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    cursor: ns-resize;
+    font-size: 24px;
+    padding: 10px;
+}
